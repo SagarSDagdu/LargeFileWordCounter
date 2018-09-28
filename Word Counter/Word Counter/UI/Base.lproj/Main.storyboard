@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Words View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WordsViewController" customModule="Word_Counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="OjF-2f-qzu">
+                                <rect key="frame" x="150" y="284" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of words in the file are :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h50-81-0Mw">
+                                <rect key="frame" x="38.5" y="220" width="243" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="800" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7XD-NP-ITH">
+                                <rect key="frame" x="145.5" y="248" width="29" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counting Start Time : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkP-3j-6rO">
+                                <rect key="frame" x="16" y="318" width="288" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counting End Time :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ym-ff-4kj">
+                                <rect key="frame" x="16" y="341.5" width="288" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tkP-3j-6rO" secondAttribute="trailing" constant="16" id="1ii-Af-kGN"/>
+                            <constraint firstItem="OjF-2f-qzu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ee6-gZ-YDn"/>
+                            <constraint firstItem="9ym-ff-4kj" firstAttribute="trailing" secondItem="tkP-3j-6rO" secondAttribute="trailing" id="FTf-GM-8dD"/>
+                            <constraint firstItem="h50-81-0Mw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="MXh-iq-gxx"/>
+                            <constraint firstItem="OjF-2f-qzu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Rbc-uH-tsm"/>
+                            <constraint firstItem="tkP-3j-6rO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WIx-gp-LxG"/>
+                            <constraint firstItem="h50-81-0Mw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Yqv-Jm-AqL"/>
+                            <constraint firstItem="tkP-3j-6rO" firstAttribute="top" secondItem="7XD-NP-ITH" secondAttribute="bottom" constant="50" id="aow-pS-JWU"/>
+                            <constraint firstItem="7XD-NP-ITH" firstAttribute="top" secondItem="h50-81-0Mw" secondAttribute="bottom" constant="8" id="bMF-j8-ZDx"/>
+                            <constraint firstItem="9ym-ff-4kj" firstAttribute="top" secondItem="tkP-3j-6rO" secondAttribute="bottom" constant="8" id="or1-Mc-dI2"/>
+                            <constraint firstItem="9ym-ff-4kj" firstAttribute="leading" secondItem="tkP-3j-6rO" secondAttribute="leading" id="rsR-vZ-2qg"/>
+                            <constraint firstItem="7XD-NP-ITH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="s7l-OD-dZO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="OjF-2f-qzu" id="ad8-fD-G0u"/>
+                        <outlet property="countLabel" destination="7XD-NP-ITH" id="P4J-pl-r7R"/>
+                        <outlet property="countingEndTimeLabel" destination="9ym-ff-4kj" id="nBm-Uj-RrY"/>
+                        <outlet property="countingStartTimeLabel" destination="tkP-3j-6rO" id="stU-nN-xZE"/>
+                        <outlet property="numberOfWordsLabel" destination="h50-81-0Mw" id="2Rc-a9-fgF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.75" y="29.577464788732396"/>
+        </scene>
+    </scenes>
+</document>
